@@ -21,6 +21,9 @@ class Roadtrips(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def __get_absolute_url__(self):
+        return f"/roadtrip/{self.id}"
 
 class Stays(models.Model):
     lodging_name = models.CharField(max_length=250)
