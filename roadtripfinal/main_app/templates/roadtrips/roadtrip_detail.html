@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content%}
+
+<h1>Here's more info for the roadtrip</h1>
+<h3>RoadTrip Name: <a href="{{ object.get_absolute_url }}">{{instance.name}}</a></h3>
+<h4>First stop: {{instance.location_1}} </h4>
+<p>State: {{instance.state}} </p>
+<p>Type of Place: {{instance.type_of_place}} </p>
+<h4>Second stop: {{instance.location_2}} </h4>
+<p>State: {{instance.state_2}} </p>
+<p>Type of Place: {{instance.type_of_place_2}} </p>
+<h4>Third stop: {{instance.location_3}} </h4>
+<p>State: {{instance.state_3}} </p>
+<p>Type of Place: {{instance.type_of_place_3}} </p>
+{% endblock %}
